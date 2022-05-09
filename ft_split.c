@@ -43,7 +43,7 @@ static int	ft_count(char const *s, char c)
 		}
 		num++;
 	}
-	if (s[i - 1] == c)
+	if (i != 0 && s[i - 1] == c)
 		num--;
 	if (num <= 0)
 		return (0);
